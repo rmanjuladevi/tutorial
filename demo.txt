@@ -1,0 +1,101 @@
+F:\demo>git clone https://github.com/rmanjuladevi/tutorial.git
+Cloning into 'tutorial'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+F:\demo>cd tutorial
+
+F:\demo\tutorial>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+F:\demo\tutorial>git diff
+diff --git a/README.md b/README.md
+index 197ca47..9bbeed9 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+-# tutorial
+\ No newline at end of file
++# Readme will be changed
+
+F:\demo\tutorial>
+F:\demo\tutorial>git add README.md
+
+F:\demo\tutorial>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+F:\demo\tutorial>git commit -m "readme file updated"
+[main 3fbfd33] readme file updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+F:\demo\tutorial>git log
+commit 3fbfd33229bef9e4422a75fa0d190f401d8f46da (HEAD -> main)
+Author: sangeeth <manjuladevi.cse@kongu.edu>
+Date:   Sun Sep 19 12:57:06 2021 +0530
+
+    readme file updated
+
+commit 90dcde29d4e8eb19de0c7e857f79495ba5ac3e3f (origin/main, origin/HEAD)
+Author: rmanjuladevi <81260306+rmanjuladevi@users.noreply.github.com>
+Date:   Sun Sep 19 12:46:46 2021 +0530
+
+    Initial commit
+
+F:\demo\tutorial>git branch
+* main
+
+F:\demo\tutorial>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rmanjuladevi/tutorial.git
+   90dcde2..3fbfd33  main -> main
+
+F:\demo\tutorial>git log
+commit 3fbfd33229bef9e4422a75fa0d190f401d8f46da (HEAD -> main, origin/main, origin/HEAD)
+Author: sangeeth <manjuladevi.cse@kongu.edu>
+Date:   Sun Sep 19 12:57:06 2021 +0530
+
+    readme file updated
+
+commit 90dcde29d4e8eb19de0c7e857f79495ba5ac3e3f
+Author: rmanjuladevi <81260306+rmanjuladevi@users.noreply.github.com>
+Date:   Sun Sep 19 12:46:46 2021 +0530
+
+    Initial commit
+
+F:\demo\tutorial>git branch
+* main
+
+F:\demo\tutorial>git branch
+* main
+
+F:\demo\tutorial>git branch branch1
+
+F:\demo\tutorial>git branch
+  branch1
+* main
+
+F:\demo\tutorial>git checkout branch1
+Switched to branch 'branch1'
+
+F:\demo\tutorial>git branch
+* branch1
+  main
