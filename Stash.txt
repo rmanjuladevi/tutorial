@@ -1,0 +1,19 @@
+
+
+git stash 
+--command copy 
+
+git stash list 
+-- list of stash
+
+git stash pop
+
+git stash apply
+
+git stash clear
+
+git stash save "message"
+
+second time stash
+
+stash added with the message
