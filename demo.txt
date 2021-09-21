@@ -1,4 +1,4 @@
-F:\demo>git clone https://github.com/rmanjuladevi/tutorial.git
+F:\demo>git clone
 Cloning into 'tutorial'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
